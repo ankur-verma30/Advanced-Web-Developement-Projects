@@ -22,6 +22,7 @@ body{
 }
 
 .cart{
+  position: relative;
   background-color: white;
   color: #212529;
   font-size: 30px;
@@ -34,6 +35,62 @@ body{
   font-size: 16px;
   color: white;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -15px;
+  right: -10px;
+  padding: 3px;
+  border-radius: 3px;
+
+}
+
+.item{
+  border: 2px solid #212529;
+  border-radius: 4px;
+}
+
+.shop{
+  display: grid;
+  grid-template-columns: repeat(4,223px);
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 1000px){
+  .shop{
+  grid-template-columns: repeat(2,223px);
+}
+}
+
+@media (max-width: 500px){
+  .shop{
+  grid-template-columns: repeat(1,223px);
+}
+}
+
+.price-quantity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons{
+  display: flex;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+}
+
+.bi-dash-lg{
+  color: red;
+}
+
+.bi-plus-lg{
+  color: green;
 }
